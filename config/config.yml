@@ -1,0 +1,27 @@
+%YAML 1.2
+---
+INFO:
+  author: Ali
+  email: solitude@hraulein.com
+  site: https://hraulein.com
+  create: 2023/05/03 17:20:21
+  version: 1.0.0
+
+SAFETY:
+  time: 操作时间 20230503172022
+  clientcode: 接口调用方帐号
+  username: 当前操作用户
+  barcode: 操作单号
+  password: 操作用户的密码
+  ticket: 安全校验位：time+clientcode+barcode+username+密码生成MD5
+
+params:
+  formtype: BILLCODE
+  billcode: 单据编号（唯一）
+  operatoruser: 1
+  operatorname: 1
+  busstype:
+  busscode:
+  companycode:
+
+---
