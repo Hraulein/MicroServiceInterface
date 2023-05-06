@@ -1,0 +1,18 @@
+%YAML 1.2
+---
+INFO:
+  author: Ali
+  email: solitude@hraulein.com
+  site: https://hraulein.com
+  create: 2023/05/03 17:20:21
+  version: 1.0.0
+
+SAFETY:                                         # # 安全校验节点
+  username: lijing86                                 # 当前操作用户
+  clientcode: NC                                # 接口调用方帐号，对应外围系统调 GEAM 使用的账号
+  #  key:                                       # 接入系统配置的验证key
+  ## time: time                                    # 格式: 20230503172022
+  ## barcode: barcode                              # 操作单号(建议使用接口yml的值)
+  ## ticket: ticket                                # 安全校验位：time+clientcode+barcode+username+密码生成MD5
+
+...

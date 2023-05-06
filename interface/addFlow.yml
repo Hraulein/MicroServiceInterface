@@ -1,0 +1,28 @@
+%YAML 1.2
+---
+INFO:
+  note: 触发扫描代办接口
+  api: http://ip:8087/siitservice/startFlow/addFlow
+
+PARAMS:
+  formtype: value                        # 不为空, 表单类型
+  datasource: value                      # 不为空, 数据来源
+  barcode: value                         # 不为空, 单据条形码
+  billcode: value                        # 不为空, 单据业务唯一编号
+  operatoruser: value                    # 不为空, 提单人帐号
+  operatorname: value                    # 不为空, 提单人姓名
+  busstype: value                        # 不为空, 单据业务类型
+  companycode: value                     # 不为空, 核算公司
+  subbilltime: value                     # 不为空, 提单时间，格式：2019-04-20 14:22:21
+  busscode:                              # 可空, 业务类型编码
+  billamount:                            # 可空, 报销金额
+  sourcebillcode:                        # 可空, 来源系统单号/上游系统单号
+  bussgroup:                             # 可空, 业务大类
+  agreements:                            # # 可空, 对应的合同列表
+    - agreementnum:                        # 合同编号
+  addinvoices:                           # # 可空, 对应的增值税发票列表
+    - invoicecode:                         # 发票代码
+      invoicenum:                          # 发票号码
+  remark:                                  # 可空, 备注信息
+
+...

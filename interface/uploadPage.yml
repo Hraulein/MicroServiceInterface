@@ -1,0 +1,19 @@
+%YAML 1.2
+---
+INFO:
+  note: 获取附件上传页面地址, 调用该接口获取一个附件上载的HTTP页面地址, 打开即可上传附件
+  api: http://ip:8087/siitservice/uploadFile/uploadPage
+
+PARAMS:
+  barcode: value                              # 不为空, 单据条形码
+  isadd:                                      # 可空, 是否可以增加附件, 1/可以, 0/不可以, 默认0
+  isdelete:                                   # 可空, 是否可以删除附件, 1/可以, 0/不可以, 默认0
+  submitbutton:                               # 可空, 是否显示提交按钮, 1/是, 0/否, 默认0
+  useraccount:                                # 可空, 当前操作用户帐号
+  language:                                   # 可空, en_US 代表英文,  zh_CN 代表中文
+  bussinfo:                                   # # 业务参数, 用于产生待办
+    - barcode: value                              # 不为空, 条码号, 唯一号
+      formtype: FILEBILLCODE                      # 不为空, 固定值：FILEBILLCODE
+      branchcode:                                 # 可空, 销售组织
+
+...

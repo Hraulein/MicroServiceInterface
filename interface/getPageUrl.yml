@@ -1,0 +1,16 @@
+%YAML 1.2
+---
+INFO:
+  note: 获取票夹页面地址, 需要进入个人票夹页面进行数据采集时, 调用该接口获取一个可以打开的页面地址, 打开进行操作
+  api: http://ip:8087/siitservice/ticketpage/getPageUrl
+
+PARAMS:
+  datasource: value               # 不为空, 1 来源
+  useraccount: value              # 不为空, 50 当前操作用户
+  apporpc:                        # 可空, 10 Pc还是app: APP/PC, 默认:APP
+  pagetype:                       # 可空, 10 页面类型: 票夹页面：Ticket / 辅助填报：AutoOCR / 选票页面：SelTicket
+  barcode:                        # 可空, 50 选票时的单据条码, 选票页面时必须, 票夹页面时不需要
+  issubmit:                       # 可空, 1 # 不为空, # 可空, 提供提交按钮, 0/不提供, 1/提供, 默认0:显示保存按钮
+  bussdata:                       # 可空, JSONObject 其他业务字段可扩展
+
+...

@@ -1,0 +1,12 @@
+%YAML 1.2
+---
+INFO:
+  note: 获取附件下载页面地址, 调用该接口获取一个附件下载的HTTP页面地址, 打开即可下载附件
+  api: http://ip:8087/siitservice/GetFileDownPathApi/getFilePath
+
+PARAMS:
+  barcode: value                    # 不为空, 单据条码
+  useraccount: value                # 不为空, 操作用户帐号
+  fileids: value,value,value        # 不为空, 附件ID号, 多个用逗号分割
+
+...

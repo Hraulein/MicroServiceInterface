@@ -1,0 +1,12 @@
+%YAML 1.2
+---
+INFO:
+  note: 外部获取打开扫描页面地址接口, 其它系统需要进入到扫描页面时, 调用该接口返回扫描界面地址
+  api: http://ip:8087/siitservice/scanWorkFile/scanPage
+
+PARAMS:
+  useraccount: value      # 不为空, 用户帐号
+  barcode:                # 可空, 单号
+  language:               # 可空, 语言
+
+...

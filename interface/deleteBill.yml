@@ -1,0 +1,14 @@
+%YAML 1.2
+---
+INFO:
+  note: 单据作废接口, 作废已经存在的单据, 标记为作废时, 需要删除指定单据对应的发票相关信息
+  api: http://ip:8087/siitservice/todeleteApi/deleteBill
+
+PARAMS:
+  barcode: value                                          # 不为空, 单据条码号
+  deletetype:                                             # 可空, 删除类型，1/标记为作废,2/删除数据,默认1
+  operatoruser:                                           # 可空, 操作人帐号
+  reason:                                                 # 可空, 重扫理由？
+  reasoncode:                                             # 可空, 重扫类型编码？
+
+...

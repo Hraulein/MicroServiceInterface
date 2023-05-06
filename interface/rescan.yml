@@ -1,0 +1,16 @@
+%YAML 1.2
+---
+INFO:
+  note: 单据重扫接口, 附件有扫描不清晰/缺少/多付时, 调用该接口, 由指定用户进行处理后, 再进行提交
+  api: http://ip:8087/siitservice/reScanApi/rescan
+
+PARAMS:
+  barcode: value                                  # 不为空, 单据条码号
+  operatoruser:                                   # 可空, 操作人帐号
+  operatorname:                                   # 可空, 操作人姓名
+  reason:                                         # 可空, 重扫理由
+  reasoncode:                                     # 可空, 重扫理由类型编码
+  backtype:                                       # 可空, 任务类型，0/重扫，1/只能补充，默认0
+  remark:                                         # 可空, 操作描述
+
+...

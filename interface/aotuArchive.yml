@@ -1,0 +1,20 @@
+%YAML 1.2
+---
+INFO:
+  note: 单据归档接口, 对指定单据信息进行锁定处理, 锁定后, 不能再进行操作
+  api: http://ip:8087/siitservice/archiveApi/aotuArchive
+
+PARAMS:
+  operatoruser: value               # 不为空, 操作人帐号
+  barcode: value                    # 不为空
+  operatorname:                     # 可空, 操作人名称
+  batchnum:                         # 可空, 批次编号
+  sapinfos:                         # 可空, 条码数组，大于0小于等于10
+    - companycode:                  # 可空, 核算公司
+      sapno:                        # 可空, 凭证编号
+      accountperiod:                # 可空, 会计期间
+      vouchertype_code:             # 可空, 凭证类型编码，SA,NC1，NC4…..
+      year:                         # 可空, 会计年度
+      journaldate:                  # 可空, 记账日期：2020-08-05
+
+...

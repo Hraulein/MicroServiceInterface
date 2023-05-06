@@ -1,0 +1,18 @@
+%YAML 1.2
+---
+INFO:
+  note: 创建影像查阅地址接口, 需要查看影像时, 调用该接口查看指定单据的影像/附件内容
+  api: http://ip:8087/siitservice/createImagePathApi/createImagePath
+
+PARAMS:
+  barcode: FYYF-10116-202211-000414                                                # 不为空, 单据条形码
+  useraccount: lijing86                                            # 不为空, 当前操作用户
+  drawpen:                                                      # 可空, 是否有画笔功能:1/有，0/没有，默认0
+  watermark:                                                    # 可空, 是否打开水印:1/有，0/没有，默认1
+  evaluation:                                                   # 可空, 是否评价权限:1/有，0/没有，默认0
+  commenttype:                                                  # 可空, 是否有批注权限:1/有，0/没有，默认0
+  candownprint:                                                 # 可空, 是否可以打印下载:1/有，0/没有，默认0
+  uploaddoc:                                                    # 可空, 是否允许上载附件,1/允许，0/不允许，默认0
+  setdoclevel:                                                  # 可空, 是否允许设置附件访问级别,1/允许，0/不允许，默认0
+
+...
